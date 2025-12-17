@@ -1,0 +1,28 @@
+{
+  "type": "starcatcher:modifier_shaped_recipe",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "starcatcher:bobber"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " HS",
+    "DBD",
+    "SD "
+  ],
+  "result": {
+    "count": 1,
+    "id": "starcatcher:aqua_bobber"
+  },
+  "modifiers" : ["starcatcher:add_aqua_sweet_spot"]
+}

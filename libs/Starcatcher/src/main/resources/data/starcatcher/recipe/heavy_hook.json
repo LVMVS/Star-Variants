@@ -1,0 +1,25 @@
+{
+  "type": "starcatcher:modifier_shaped_recipe",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "starcatcher:hook"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": [
+    "N  ",
+    "IHI",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "starcatcher:heavy_hook"
+  },
+  "modifiers" : ["starcatcher:slower_moving_sweet_spots"]
+}

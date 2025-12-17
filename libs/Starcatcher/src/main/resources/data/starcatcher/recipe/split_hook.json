@@ -1,0 +1,25 @@
+{
+  "type": "starcatcher:modifier_shaped_recipe",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "starcatcher:hook"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "N  ",
+    "CHC",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "starcatcher:split_hook"
+  },
+  "modifiers" : ["starcatcher:double_item"]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "tag": "minecraft:wool"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " WS",
+    "WLW",
+    "SW "
+  ],
+  "result": {
+    "count": 1,
+    "id": "starcatcher:bobber"
+  }
+}
