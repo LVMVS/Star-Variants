@@ -18,8 +18,8 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
-}
+    flatDir { dirs "libs" }
+    }
 
 base {
     archivesName = mod_id
@@ -118,11 +118,17 @@ dependencies {
     // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
     // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+ //   compileOnly "teammetallurgy.aquaculture:aquaculture-1.21.1-common-api:2.7.17"
+    compileOnly files("libs/Aquaculture-1.21.1-2.7.17.jar");
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
+
+
+    implementation "blank:starcatcher-1.21.1-1.4"
+    implementation files("libs/Starcatcher-1.21.1-1.4.jar")
 
     // Example mod dependency using a file as dependency
     // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
@@ -170,9 +176,8 @@ publishing {
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/repo"
-        }
-    }
+            url "file://${project.projectDir}/repo";
+        }}
 }
 
 tasks.withType(JavaCompile).configureEach {
